@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="robomateplusModelStoreContainer" CdmEntityContainer="robomateplusEntities">
+    <EntitySetMapping Name="AzureUploadTracking">
+      <EntityTypeMapping TypeName="robomateplusModel.AzureUploadTracking">
+        <MappingFragment StoreEntitySet="AzureUploadTracking">
+          <ScalarProperty Name="ProductContentCode" ColumnName="ProductContentCode" />
+          <ScalarProperty Name="CourseCode" ColumnName="CourseCode" />
+          <ScalarProperty Name="FileUrl" ColumnName="FileUrl" />
+          <ScalarProperty Name="Mp4Uploaded" ColumnName="Mp4Uploaded" />
+          <ScalarProperty Name="EncodeStarted" ColumnName="EncodeStarted" />
+          <ScalarProperty Name="EncodeCompleted" ColumnName="EncodeCompleted" />
+          <ScalarProperty Name="EncSetupCompleted" ColumnName="EncSetupCompleted" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="UploadedOn" ColumnName="UploadedOn" />
+          <ScalarProperty Name="EncodedOn" ColumnName="EncodedOn" />
+          <ScalarProperty Name="EncryptedOn" ColumnName="EncryptedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseMaster">
+      <EntityTypeMapping TypeName="robomateplusModel.CourseMaster">
+        <MappingFragment StoreEntitySet="CourseMaster">
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="CourseCategoryCode" ColumnName="CourseCategoryCode" />
+          <ScalarProperty Name="BoardCode" ColumnName="BoardCode" />
+          <ScalarProperty Name="MediumCode" ColumnName="MediumCode" />
+          <ScalarProperty Name="DivisionCode" ColumnName="DivisionCode" />
+          <ScalarProperty Name="CourseCode" ColumnName="CourseCode" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseDisplayName" ColumnName="CourseDisplayName" />
+          <ScalarProperty Name="CourseShortName" ColumnName="CourseShortName" />
+          <ScalarProperty Name="CourseDescription" ColumnName="CourseDescription" />
+          <ScalarProperty Name="CourseSequenceNo" ColumnName="CourseSequenceNo" />
+          <ScalarProperty Name="CourseHierarchyCode" ColumnName="CourseHierarchyCode" />
+          <ScalarProperty Name="Is_Online" ColumnName="Is_Online" />
+          <ScalarProperty Name="FreeDuration" ColumnName="FreeDuration" />
+          <ScalarProperty Name="FreeVideo" ColumnName="FreeVideo" />
+          <ScalarProperty Name="FreeTest" ColumnName="FreeTest" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Reference_Course" ColumnName="Reference_Course" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductContentMaster">
+      <EntityTypeMapping TypeName="robomateplusModel.ProductContentMaster">
+        <MappingFragment StoreEntitySet="ProductContentMaster">
+          <ScalarProperty Name="ProductContentId" ColumnName="ProductContentId" />
+          <ScalarProperty Name="ProductContentCode" ColumnName="ProductContentCode" />
+          <ScalarProperty Name="ProductContentName" ColumnName="ProductContentName" />
+          <ScalarProperty Name="ProductContentDisplayName" ColumnName="ProductContentDisplayName" />
+          <ScalarProperty Name="ProductContentDescription" ColumnName="ProductContentDescription" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="ProductContentFileUrl" ColumnName="ProductContentFileUrl" />
+          <ScalarProperty Name="ProductContentImageUrl" ColumnName="ProductContentImageUrl" />
+          <ScalarProperty Name="KeyPath" ColumnName="KeyPath" />
+          <ScalarProperty Name="BoardCode" ColumnName="BoardCode" />
+          <ScalarProperty Name="CourseCode" ColumnName="CourseCode" />
+          <ScalarProperty Name="SubjectCode" ColumnName="SubjectCode" />
+          <ScalarProperty Name="ChapterCode" ColumnName="ChapterCode" />
+          <ScalarProperty Name="TopicCode" ColumnName="TopicCode" />
+          <ScalarProperty Name="SubTopicCode" ColumnName="SubTopicCode" />
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+          <ScalarProperty Name="LessonPlanCode" ColumnName="LessonPlanCode" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="ContentTypeCode" ColumnName="ContentTypeCode" />
+          <ScalarProperty Name="TestCode" ColumnName="TestCode" />
+          <ScalarProperty Name="Dimension1" ColumnName="Dimension1" />
+          <ScalarProperty Name="Dimension1Unit" ColumnName="Dimension1Unit" />
+          <ScalarProperty Name="Dimension1Value" ColumnName="Dimension1Value" />
+          <ScalarProperty Name="Dimension2" ColumnName="Dimension2" />
+          <ScalarProperty Name="Dimension2Unit" ColumnName="Dimension2Unit" />
+          <ScalarProperty Name="Dimension2Value" ColumnName="Dimension2Value" />
+          <ScalarProperty Name="Dimension3" ColumnName="Dimension3" />
+          <ScalarProperty Name="Dimension3Unit" ColumnName="Dimension3Unit" />
+          <ScalarProperty Name="Dimension3Value" ColumnName="Dimension3Value" />
+          <ScalarProperty Name="Dimension4" ColumnName="Dimension4" />
+          <ScalarProperty Name="Dimension4Unit" ColumnName="Dimension4Unit" />
+          <ScalarProperty Name="Dimension4Value" ColumnName="Dimension4Value" />
+          <ScalarProperty Name="Dimension5" ColumnName="Dimension5" />
+          <ScalarProperty Name="Dimension5Unit" ColumnName="Dimension5Unit" />
+          <ScalarProperty Name="Dimension5Value" ColumnName="Dimension5Value" />
+          <ScalarProperty Name="TotalContentRating" ColumnName="TotalContentRating" />
+          <ScalarProperty Name="TotalUserRatedContent" ColumnName="TotalUserRatedContent" />
+          <ScalarProperty Name="RatingModifiedOn" ColumnName="RatingModifiedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="isavchanged" ColumnName="isavchanged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

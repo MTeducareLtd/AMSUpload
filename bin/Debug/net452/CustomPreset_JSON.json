@@ -1,0 +1,40 @@
+{  
+  "Version": 1.0,  
+  "Codecs": [  
+    {  
+      "KeyFrameInterval": "00:00:02",  
+      "H264Layers": [  
+        {  
+          "Profile": "Auto",  
+          "Level": "auto",  
+          "Bitrate": mbitRate,  
+          "MaxBitrate": mbitRate,  
+          "BufferWindow": "00:00:05",  
+          "Width": mWidth,  
+          "Height": mHeight,  
+          "BFrames": 3,  
+          "ReferenceFrames": 3,  
+          "AdaptiveBFrame": true,  
+          "Type": "H264Layer",  
+          "FrameRate": "0/1"  
+        }  
+      ],  
+      "Type": "H264Video"  
+    },  
+    {  
+      "Profile": "AACLC",  
+      "Channels": 2,  
+      "SamplingRate": 48000,  
+      "Bitrate": abitRate,  
+      "Type": "AACAudio"  
+    }  
+  ],  
+  "Outputs": [  
+    {  
+      "FileName": "{Basename}_{Width}x{Height}_{VideoBitrate}.mp4",  
+      "Format": {  
+        "Type": "MP4Format"  
+      }  
+    }  
+  ]  
+}  

@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "706Si/MfzTqg+ly1a1NSmlQ78a+W60Nck61aO9wuL8gau6J6I4ogZqibhDDBr9gv2gd50OmaLRkKN9neEtZW0A==",
+  "success": true,
+  "projectFilePath": "D:\\Diwakar\\Projects\\AMSUpload\\AMSUpload.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\hyak.common\\1.0.1\\hyak.common.1.0.1.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.azure.common\\2.0.1\\microsoft.azure.common.2.0.1.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.azure.common.dependencies\\1.0.0\\microsoft.azure.common.dependencies.1.0.0.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.bcl\\1.1.9\\microsoft.bcl.1.1.9.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.bcl.async\\1.0.168\\microsoft.bcl.async.1.0.168.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.26.0\\microsoft.identitymodel.abstractions.6.26.0.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.26.0\\microsoft.identitymodel.jsonwebtokens.6.26.0.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.identitymodel.logging\\6.26.0\\microsoft.identitymodel.logging.6.26.0.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.26.0\\microsoft.identitymodel.tokens.6.26.0.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.net.http\\2.2.22\\microsoft.net.http.2.2.22.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\microsoft.windowsazure.management.mediaservices\\4.1.0\\microsoft.windowsazure.management.mediaservices.4.1.0.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
+    "C:\\Users\\diwakar.yadav\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.26.0\\system.identitymodel.tokens.jwt.6.26.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMSUpload", "AMSUpload.csproj", "{AE4D2E2C-2838-4C88-BD2A-8E48A0CC0C78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE4D2E2C-2838-4C88-BD2A-8E48A0CC0C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4D2E2C-2838-4C88-BD2A-8E48A0CC0C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4D2E2C-2838-4C88-BD2A-8E48A0CC0C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4D2E2C-2838-4C88-BD2A-8E48A0CC0C78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {908B63C2-82E9-48A4-8446-F07671895441}
+	EndGlobalSection
+EndGlobal

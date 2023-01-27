@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="robomateplusModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AzureUploadTracking">
+    <Key>
+      <PropertyRef Name="ProductContentCode" />
+    </Key>
+    <Property Name="ProductContentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CourseCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FileUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Mp4Uploaded" Type="Boolean" />
+    <Property Name="EncodeStarted" Type="Boolean" />
+    <Property Name="EncodeCompleted" Type="Boolean" />
+    <Property Name="EncSetupCompleted" Type="Boolean" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="UploadedOn" Type="DateTime" Precision="3" />
+    <Property Name="EncodedOn" Type="DateTime" Precision="3" />
+    <Property Name="EncryptedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CourseMaster">
+    <Key>
+      <PropertyRef Name="CourseId" />
+    </Key>
+    <Property Name="CourseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseCategoryCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BoardCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MediumCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DivisionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CourseCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CourseName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CourseDisplayName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CourseShortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CourseDescription" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CourseSequenceNo" Type="Int32" Nullable="false" />
+    <Property Name="CourseHierarchyCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Is_Online" Type="Boolean" />
+    <Property Name="FreeDuration" Type="Int32" />
+    <Property Name="FreeVideo" Type="Int32" />
+    <Property Name="FreeTest" Type="Int32" />
+    <Property Name="Version" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Reference_Course" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductContentMaster">
+    <Key>
+      <PropertyRef Name="ProductContentId" />
+    </Key>
+    <Property Name="ProductContentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductContentCode" Type="String" MaxLength="11" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ProductContentName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProductContentDisplayName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ProductContentDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProductCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VersionId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductContentFileUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductContentImageUrl" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="KeyPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BoardCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CourseCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SubjectCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ChapterCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TopicCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SubTopicCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ModuleCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LessonPlanCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LocationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContentTypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TestCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dimension1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension1Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension1Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension2Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension2Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension3Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension3Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension4Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension4Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension5Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dimension5Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TotalContentRating" Type="Decimal" Precision="18" Scale="1" Nullable="false" />
+    <Property Name="TotalUserRatedContent" Type="Int64" Nullable="false" />
+    <Property Name="RatingModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="isavchanged" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="robomateplusEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AzureUploadTracking" EntityType="Self.AzureUploadTracking" />
+    <EntitySet Name="CourseMaster" EntityType="Self.CourseMaster" />
+    <EntitySet Name="ProductContentMaster" EntityType="Self.ProductContentMaster" />
+  </EntityContainer>
+</Schema>
